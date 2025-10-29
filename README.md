@@ -25,8 +25,8 @@ A modern, interactive web application that visualizes JSON data as an expandable
 
 1. Clone the repository:
 
-   git clone [https://github.com/yourusername/json-tree-visualizer.git](https://github.com/yourusername/json-tree-visualizer.git)
-   cd json-tree-visualizer
+   git clone https://github.com/nilima-t/json-tree-visualiser.git
+   cd json-tree-visualiser
 
 2. Install dependencies:
   npm install
@@ -36,6 +36,27 @@ A modern, interactive web application that visualizes JSON data as an expandable
 
 4. Open http://localhost:3000 to view it in your browser.
 
+
+## Deployment
+
+1. npm install --save gh-pages
+
+2. In package.json, update the homepage field with GitHub username and repository name:
+
+"homepage": "https://<username>.github.io/<repo-name>"
+
+3. Add the deployment scripts to package.json, if not already present:
+
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
+4. Build and deploy to GitHub Pages:
+
+npm run deploy
+
+The application is live at https://nilima-t.github.io/json-tree-visualiser
 
 ### Usage
 1. Enter or paste your JSON data into the input area
